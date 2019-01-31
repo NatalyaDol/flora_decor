@@ -1,0 +1,10 @@
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial;
+    height: 100%;
+}
+
+@import '_mixins';
+@import '_color';
+@import '_header';

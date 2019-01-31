@@ -1,0 +1,156 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: Arial;
+  height: 100%;
+}
+
+header {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-align-content: stretch;
+  /* Safari */
+}
+
+header .header a.logo {
+  height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-flex: 1.3;
+      -ms-flex-positive: 1.3;
+          flex-grow: 1.3;
+  -webkit-flex-grow: 1.3;
+  /* Safari */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  /* Safari */
+}
+
+header .header .menu_lab {
+  min-width: 2rem;
+  min-height: 2rem;
+  display: none;
+  background-image: url(../image/menu_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header .header input[type="checkbox"]:checked ~ nav {
+  display: block;
+}
+
+header .header #menu {
+  display: none;
+}
+
+header .header nav .menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 60px;
+  padding: 0;
+}
+
+header .header nav .menu li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Montserrat, Georgia, serif;
+  color: #A64506;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 1rem;
+}
+
+header .header nav .menu li a:hover {
+  color: #FFB07D;
+}
+
+@media only screen and (max-width: 950px) {
+  header .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header nav {
+    width: 100%;
+  }
+  header .header a.logo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header {
+    padding: 0;
+  }
+  header .header {
+    padding: 1rem 2rem;
+  }
+  header .header a.logo {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 50%;
+  }
+  header .header .menu_lab {
+    display: block;
+  }
+  header .header nav {
+    display: none;
+    width: 100%;
+  }
+  header .header nav .menu {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  header .header input[type="checkbox"]:checked ~ nav {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
